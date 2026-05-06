@@ -28,7 +28,7 @@ CREATE TABLE ong (
 
 CREATE TABLE campanha (
   id_campanha INT PRIMARY KEY AUTO_INCREMENT,
-  id_ont INT REFERENCES ong(id_ong),
+  id_ong INT REFERENCES ong(id_ong),
   titulo VARCHAR(100),
   descrição VARCHAR(300),
   status VARCHAR(10),
@@ -54,7 +54,7 @@ CREATE TABLE campanha_item(
 
 
 CREATE TABLE imagens (
-  id INT PRIMARY KEY AUTO_INCREMENT,
+  id_img INT PRIMARY KEY AUTO_INCREMENT,
   tipo ENUM('perfil', 'ong', 'campanha'),
   image BLOB NOT NULL,
   usuario_id INT NULL,
