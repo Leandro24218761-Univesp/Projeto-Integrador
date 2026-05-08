@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/logo-pra-quem-precisa.png" type="image/x-icon">
+    <title>Quero Doar | Pra Quem Precisa</title>
+</head>
+
+<body class="bg-primary text-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./images/logo-pra-quem-precisa.png" alt="Logo" width="48" class="me-2">
+                <span class="fw-bold">Pra Quem Precisa</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item me-2">
+                        <a class="btn btn-outline-light btn-sm rounded-pill px-4" href="doar.html">QUERO DOAR</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-white" href="index.html#como-ajudar">COMO AJUDAR</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-white" href="index.html#quem-somos">QUEM SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html#contato">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="donate-page pb-5">
+        <section class="container py-4">
+            <div class="text-center text-white mb-4">
+                <p class="small text-uppercase mb-2 letter-spacing">SELECIONE A ONG E FAÇA SUA DOAÇÃO</p>
+            </div>
+
+            <div class="donate-board p-4 rounded-4 shadow-lg">
+                <div class="row align-items-center mb-4">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <div class="filter-panel d-flex align-items-center justify-content-center justify-content-md-start gap-2 py-2 px-3 rounded-4 bg-white bg-opacity-10 text-white">
+                            <i class="bi bi-sliders fs-5"></i>
+                            <span class="fw-semibold">Filtrar</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <span class="text-white small"><i class="bi bi-geo-alt-fill me-1"></i>CEP 06653-180</span>
+                        <a href="#" class="ms-3 text-white text-decoration-underline">Alterar</a>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <!-- ONG cards -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 1</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 2,3 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 2</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 5 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 3</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 10,2 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 4</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 12 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 5</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 12,5 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 6</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 14 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 7</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 14,5 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 8</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 15 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 9</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 18 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card ong-card rounded-4 shadow-sm border-0">
+                            <div class="card-body text-center">
+                                <h3 class="ong-title">ONG 10</h3>
+                                <p class="ong-distance text-secondary mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> 20 km</p>
+                                <h5 class="fw-bold">Necessidades</h5>
+                                <ul class="list-unstyled ong-list mb-3">
+                                    <li><span class="dot bg-danger"></span> Blusa de Moletom</li>
+                                    <li><span class="dot bg-warning"></span> Bermuda</li>
+                                    <li><span class="dot bg-success"></span> Camiseta</li>
+                                </ul>
+                                <p class="mb-2">Entre em Contato</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/instagram.jpg" alt="Instagram" class="contact-icon-img"></a>
+                                    <a href="#" class="contact-icon text-decoration-none"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="contact-icon-img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-center text-white py-4">
+        <div class="container">
+            <p class="mb-3 fw-semibold">Nossas Principais Necessidades</p>
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <img src="./images/flip-flops.png" alt="Chinelos" width="60">
+                <img src="./images/blouse.png" alt="Blusa" width="60">
+                <img src="./images/pants.png" alt="Calça" width="60">
+                <img src="./images/shoes.png" alt="Tênis" width="60">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+

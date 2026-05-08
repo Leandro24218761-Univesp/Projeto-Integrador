@@ -77,3 +77,91 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
+.donate-page{
+    background-color: #004B8D;
+}
+
+.donate-board{
+    background-color: #003770;
+}
+
+.letter-spacing{
+    letter-spacing: 0.15em;
+}
+
+.filter-panel{
+    min-height: 56px;
+}
+
+.ong-card{
+    background-color: #fff;
+}
+
+.ong-title{
+    font-size: 1.65rem;
+    margin-bottom: 0.35rem;
+}
+
+.ong-distance{
+    font-size: 0.95rem;
+}
+
+.ong-list li{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.dot{
+    width: 0.9rem;
+    height: 0.9rem;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.contact-icon{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.contact-icon i{
+    font-size: 1.1rem;
+}
+
+.contact-icon-img {
+    width: 32px;
+    height: auto;
+    display: block;
+}
+
+.contact-icon-img[src*="instagram.jpg"] {
+    width: 40px;
+}
+
+.contact-icon-img[src*="whatsapp.jpg"] {
+    width: 34px;
+
+@media (max-width: 767px) {
+    .donate-board{
+        padding: 2rem 1rem;
+    }
+
+    .ong-card{
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 575px) {
+    nav .navbar-brand span{
+        font-size: 0.95rem;
+    }
+}
