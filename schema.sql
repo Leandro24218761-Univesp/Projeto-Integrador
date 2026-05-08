@@ -24,7 +24,7 @@ CREATE TABLE ongs (
   nome_fantasia VARCHAR(100) UNIQUE NOT NULL,
   cnpj VARCHAR(18) UNIQUE NOT NULL,
   site VARCHAR(100) UNIQUE NULL,
-  status_aprovação ENUM('Aprovado', 'Reprovado', 'Em análise') NOT NULL,
+  status_aprovação ENUM('Aprovada', 'Reprovada', 'Em análise') NOT NULL,
   FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
 );
 
