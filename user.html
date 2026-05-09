@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="./images/logo-pra-quem-precisa.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,7 +45,7 @@
                         <a class="nav-link" href="#contato">CONTATO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="user.html">INFORMAÇÕES DO USUÁRIO</a>
+                        <a class="nav-link active" href="#">INFORMAÇÕES DO USUÁRIO</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 not-user">
@@ -60,54 +60,40 @@
             </div>
         </div>
     </nav>
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./images/home1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/home2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/home3.png" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <main id="main-index">
-        <div class="center">
+    <main class="bg-blue">
+        <h1>INFORMAÇÕES</h1>
+        <form action="#" method="post">
+            <div class="background-blue">
+                <section class="main-content-user">
+                    <article>
+                        <img src="./images/user.png" alt="">
+                    </article>
+                    <article>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Ex: João">
 
-            
-            <h1>DOE ROUPAS E TRANSFORME VIDAS</h1>
-            
-            <p>Cada peça de roupa pode fazer a diferença real na vida de alguém. Conectamos sua doação às necessidades
-                específicas de ONGs próximas, ajudando você a doar exatamente o que é mais necessário no momento. Faça parte
-                dessa corrente de solidariedade e transforme sua doação em cuidado, dignidade e oportunidade para quem mais
-                precisa.
-            </p>
-            <a href="doar.html" class="quero-doar">QUERO DOAR</a>
-            
-        </div>
+                        <label for="surname">Sobreome</label>
+                        <input type="text" name="surname" id="surname" placeholder="Ex: da Silva">
+
+                        <label for="cpf">CPF</label>
+                        <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" readonly>
+
+                        <label for="cep">CEP</label>
+                        <input type="number" name="cep" id="cep" placeholder="00000-000">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                    </article>
+
+                </section>
+            </div>
+            <button type="submit">EDITAR</button>
+
+        </form>
     </main>
-        <footer>
+
+    <footer>
         <h4>Nossas Principais Necessidades</h4>
         <div>
             <img src="./images/flip-flops.png" alt="">
