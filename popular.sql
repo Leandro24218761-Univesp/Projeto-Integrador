@@ -1,5 +1,17 @@
-﻿INSERT INTO doacoes (titulo, descricao, tamanho, fk_usuario, fk_categoria, imagem_url) VALUES 
-('Agasalho de Inverno', 'Casaco de lã azul em ótimo estado', 'G', 1, 1, 'https://images.unsplash.com/photo-1591195853828-11db59a44f6b'),
-('Tênis Esportivo', 'Tênis para corrida pouco usado', '40', 1, 1, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff'),
-('Camisa Polo', 'Camisa branca de algodão, seminova', 'M', 1, 1, 'https://images.unsplash.com/photo-1581655353564-df123a1eb820'),
-('Calça Jeans', 'Calça jeans masculina azul escuro', '42', 1, 1, 'https://images.unsplash.com/photo-1542272604-787c3835535d');
+﻿-- 1. TIPOS DE ITENS
+INSERT INTO tipos_de_itens (nome) VALUES ('Roupas'), ('Calçados');
+
+-- 2. USUÁRIOS (Doador e ONG)
+INSERT INTO usuarios (nome, email, senha, tipo_usuario) VALUES 
+('Emerson Silva', 'emerson@email.com', '123', 'doador'),
+('ONG Exemplo', 'contato@ong.org', '123', 'ong');
+
+-- 3. ONGS (Ligada ao usuário ID 2)
+INSERT INTO ongs (nome_instituicao, fk_usuario) VALUES ('ONG Exemplo', 2);
+
+-- 4. CAMPANHAS (Ligada à ONG ID 1)
+INSERT INTO campanhas (nome, descricao, fk_ong) VALUES ('Campanha Inverno', 'Coleta de agasalhos', 1);
+
+-- 5. DOAÇÕES (Ligada ao Doador ID 1 e Categoria ID 1)
+INSERT INTO doacoes (titulo, descricao, tamanho, fk_usuario, fk_categoria, imagem_url) VALUES 
+('Casaco Azul', 'Casaco de lã em ótimo estado', 'G', 1, 1, 'https://images.unsplash.com/photo-1591195853828-11db59a44f6b');
